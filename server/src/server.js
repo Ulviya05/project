@@ -2,7 +2,7 @@ const http = require("http");
 const mongoose = require("mongoose")
 
 const PORT = 5005;
-const DB = "mongodb+srv://ulka:ulka2005@cluster0.0ztiq13.mongodb.net/test2?retryWrites=true&w=majority"
+const DB = ""
 
 const app = require("./app");
 
