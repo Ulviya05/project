@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_log">
+        <div class="left">
+            <div class="logo">
+                <img src="https://pivony-project.netlify.app/assets/pivony_logo.png" alt="pivony img">
+            </div>
+            <div class="side-nav">
+                <div class="insights">
+                    <button onclick="index()">INSIGHTS</button>
+                </div>
+                <div class="login_select">
+                    <button onclick="account()">ACCOUNT</button>
+                </div>
+                <div class="login_select selected">
+                    <button onclick="create()">CREATE INSIGHTS</button>
+                </div>
+                <div class="login_select">
+                    <button onclick="login()">LOG OUT</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="right">
+            <div class="top-bar">
+                <div class="title">Create your insight</div>
+            </div>
+            <div class="create">
+                <div class="rating_title">Rating</div>
+                <div class="rating_box">
+                    <input id="rating" type="number" min="0" max="5" step="1" value="5">
+                </div>
+                <div class="create_text">
+                    <textarea name="" id="text" cols="30" rows="5" placeholder="Your insight" required minlength="5" ></textarea>
+                </div>
+                <div class="add">
+                    <button type="button" onclick="send()">SHARE YOUR INSIGHT</button>
+                </div>
+            </div>
+            
+            
+        
+        </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js" integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
